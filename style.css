@@ -2,7 +2,7 @@
 
 :root {
   --line-border-fill: #3498db;
-  --line-border-empty: #e0e0e0;
+  --line-border-empty: grey;
 }
 
 * {
@@ -34,6 +34,7 @@ body {
 }
 
 .progress-container::before {
+    content:'';
     background-color: var(--line-border-empty);
     position: absolute;
     top: 50%;
